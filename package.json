@@ -1,0 +1,37 @@
+{
+  "name": "npm-versions",
+  "version": "0.0.0",
+  "main": "lib/npm-versions.js",
+  "description": "Retrieve all versions from a module with helper to get the latestRelease and latestPreRelease",
+  "homepage": "https://github.com/maxleiko/npm-versions",
+  "bugs": "https://github.com/maxleiko/npm-versions/issues",
+  "author": {
+    "name": "Maxime Tricoire",
+    "email": "max.tricoire@gmail.com",
+    "url": "https://github.com/maxleiko"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxleiko/npm-versions"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "npm": "^1.4.16",
+    "semver": "^2.3.0"
+  }
+}
