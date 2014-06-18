@@ -1,13 +1,19 @@
-# npm-versions [![Build Status](https://secure.travis-ci.org/maxleiko/npm-versions.png?branch=master)](http://travis-ci.org/maxleiko/npm-versions)
+# npm-vers [![Build Status](https://secure.travis-ci.org/maxleiko/npm-vers.png?branch=master)](http://travis-ci.org/maxleiko/npm-vers)
 
 Retrieve all versions from a module with helper to get the latestRelease and latestPreRelease
 
 ## Getting Started
-Install the module with: `npm install npm-versions`
+Install the module with: `npm install npm-vers`
 
 ```javascript
-var npm-versions = require('npm-versions');
-npm-versions.awesome(); // "awesome"
+var npmVersions = require('npm-vers');
+npmVersions('npmi', function (err, result) {
+  if (err) {
+    throw err;
+  }
+  
+  console.log(result);
+});
 ```
 
 ## Documentation

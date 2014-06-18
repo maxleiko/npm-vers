@@ -1,6 +1,6 @@
 'use strict';
 
-var npmVersions = require('../lib/npm-versions.js');
+var npmVersions = require('../lib/npm-vers.js');
 
 /*
  ======== A Handy Little Nodeunit Reference ========
@@ -22,7 +22,7 @@ var npmVersions = require('../lib/npm-versions.js');
  test.ifError(value)
  */
 
-exports.npmVersions = {
+exports.npmVers = {
     setUp: function(done) {
         npmVersions('kevoree-node-javascript', function (err, res) {
             this.result = res;
