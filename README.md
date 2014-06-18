@@ -55,7 +55,7 @@ npmVersions('foo', function (err, result) {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+0.1.0 - 18/06/2014
 
 ## License
 Copyright (c) 2014 Maxime Tricoire. Licensed under the MIT license.
