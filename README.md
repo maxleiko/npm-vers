@@ -18,19 +18,19 @@ npmVersions('npmi', function (err, result) {
 
 ## Documentation
 #### result.current
-__Type:__ SemVer object
+__Type:__ SemVer object  
 __Content:__ current version (latest) on `registry.npmjs.org`
 
 #### result.versions
-__Type:__ Array
+__Type:__ Array  
 __Content:__ current version (latest) on `registry.npmjs.org`
 
 #### result.latestRelease
-__Type:__ SemVer object (or null)
+__Type:__ SemVer object (or null)  
 __Content:__ latest clean `release` version on `registry.npmjs.org`
 
 #### result.latestPreRelease
-__Type:__ SemVer object (or null)
+__Type:__ SemVer object (or null)  
 __Content:__ latest `prerelease` or `build` version on `registry.npmjs.org`
 
 ## Examples
