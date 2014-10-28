@@ -1,6 +1,7 @@
 'use strict';
 
 var npmVersions = require('../lib/npm-vers.js');
+var npm = require('npm');
 
 /*
  ======== A Handy Little Nodeunit Reference ========
@@ -33,7 +34,15 @@ exports.npmVers = {
     'current': function(test) {
         test.expect(1);
         // tests here
-        test.equal(this.result.current, "0.6.18-SNAPSHOT", "should be equal");
-        test.done();
+        npm.load(function () {
+            npm.commands.view(['kevoree-node-javascript', 'name', 'version'], true, function (err, view) {
+                if (err) {
+                    throw err;
+                }
+
+                test.equal(this.result.current, Object.keys(view)[0], "should be equal");
+                test.done();
+            }.bind(this));
+        }.bind(this));
     }
 };
